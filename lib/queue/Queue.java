@@ -23,24 +23,29 @@ public class Queue<T> {
 		size = items.length;
 	}
 
-	public int getStartIndex() {
+	public int startIndex() {
 		return _startIndex;
 	}
 
-	public int setStartIndex(int startIndex) {
+	protected int setStartIndex(int startIndex) {
 		return _startIndex = startIndex;
 	}
 
-	public int getSize() {
+	public int size() {
 		return size;
 	}
 
-	public int setSize(int size) {
-		return this.size = size;
+	protected int setSize(int size) {
+		this.size = size;
+		return size;
 	}
 
 	public int maxSize() {
 		return maxSize;
+	}
+
+	protected T[] items() {
+		return _items;
 	}
 
 	public boolean isFull() {
