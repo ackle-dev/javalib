@@ -4,9 +4,9 @@ import java.util.Arrays;
 public class Queue<T> {
 
 	private final T[] _items;
-	public final int maxSize;
+	private final int maxSize;
 	private int _startIndex;
-	public int size;
+	private int size;
 
 	@SuppressWarnings("unchecked")
 	public Queue(int maxSize) {
@@ -23,8 +23,24 @@ public class Queue<T> {
 		size = items.length;
 	}
 
-	public int length() {
+	public int getStartIndex() {
+		return _startIndex;
+	}
+
+	public int setStartIndex(int startIndex) {
+		return _startIndex = startIndex;
+	}
+
+	public int getSize() {
 		return size;
+	}
+
+	public int setSize(int size) {
+		return this.size = size;
+	}
+
+	public int maxSize() {
+		return maxSize;
 	}
 
 	public boolean isFull() {
