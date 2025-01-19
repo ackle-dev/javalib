@@ -1,4 +1,4 @@
-public class DEQ<T> extends Queue<T> {
+public final class DEQ<T> extends Queue<T> {
 	public DEQ(int maxSize) {
 		super(maxSize);
 	}
