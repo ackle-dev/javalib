@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public final class Queue<T> {
+public class Queue<T> {
 
 	private final T[] _items;
 	private final int maxSize;
